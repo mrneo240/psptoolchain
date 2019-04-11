@@ -40,5 +40,5 @@ cd build-psp
 
 ## Compile and install.
 run_make
-run_make install
+run_make install_strip
 run_make clean

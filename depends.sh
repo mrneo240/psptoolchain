@@ -51,6 +51,7 @@ check_header ()
 #include <stdio.h>
 #include <stdlib.h>
 #include <$1>
+
 int
 main (void)
 {
@@ -65,7 +66,7 @@ _EOF_
 		return 0
 	elif find_header_file "$1"
 	then
-		#rm -f tmp.$$.c tmp.$$.o
+		rm -f tmp.$$.c tmp.$$.o
 		echo "present but cannot be compiled"
 		return 99
 	else

@@ -176,7 +176,7 @@ run_scripts ../depends dependency
 get_script_number ()
 {
 	NUM="$1"
-	NUM=$((NUM))
+	NUM=$((10#$NUM))
 	printf '%03d' "$NUM"
 	unset NUM
 }
